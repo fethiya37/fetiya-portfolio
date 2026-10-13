@@ -24,19 +24,19 @@ export default function About() {
     <FadeIn>
       <section
         id="about"
-        className="mx-auto max-w-[1600px] px-8 py-24 lg:px-16"
+        className="mx-auto max-w-[1600px] px-6 py-16 sm:px-8 sm:py-20 lg:px-16 lg:py-24"
       >
         <SectionTitle title="About Me" eyebrow="WHO I AM" />
 
-        <div className="grid gap-16 lg:grid-cols-[1.2fr_1fr]">
-          <div className="space-y-6">
-            <p className="text-xl leading-relaxed text-slate-200">
+        <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:gap-16">
+          <div className="space-y-5 sm:space-y-6">
+            <p className="text-lg leading-relaxed text-slate-200 sm:text-xl">
               I&apos;m a Senior Full Stack Developer based in Addis Ababa,
               Ethiopia, focused on building scalable enterprise software that
               solves real operational problems.
             </p>
 
-            <p className="leading-8 text-slate-400">
+            <p className="text-sm leading-7 text-slate-400 sm:text-base sm:leading-8">
               Over the past four years I&apos;ve designed and shipped systems
               across stock, procurement, production, sales, and costing — along
               with HRM, LMS, Logistics, Recruitment, and Clinic management
@@ -45,7 +45,7 @@ export default function About() {
               Next.js on the frontend.
             </p>
 
-            <p className="leading-8 text-slate-400">
+            <p className="text-sm leading-7 text-slate-400 sm:text-base sm:leading-8">
               I care about clean architecture, readable code, and systems that
               hold up under real-world load. Whether it&apos;s a procurement
               workflow used by hundreds of staff or a clinic platform handling
@@ -53,7 +53,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="space-y-5">
+          <div className="space-y-4 sm:space-y-5">
             {highlights.map((item) => (
               <div
                 key={item.title}
@@ -61,7 +61,7 @@ export default function About() {
                   group rounded-2xl
                   border border-slate-800
                   bg-slate-900/60
-                  p-6 backdrop-blur
+                  p-5 backdrop-blur sm:p-6
                   transition-all duration-300
                   hover:-translate-y-1
                   hover:border-amber-500/60
@@ -71,7 +71,7 @@ export default function About() {
                   <div className="mt-2 h-2 w-2 shrink-0 rounded-full bg-amber-400" />
 
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-100">
+                    <h3 className="text-base font-semibold text-slate-100 sm:text-lg">
                       {item.title}
                     </h3>
 

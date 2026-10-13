@@ -24,19 +24,20 @@ export default function GitHub() {
     <FadeIn>
       <section
         id="github"
-        className="mx-auto max-w-[1600px] px-8 py-24 lg:px-16"
+        className="mx-auto max-w-[1600px] px-6 py-16 sm:px-8 sm:py-20 lg:px-16 lg:py-24"
       >
         <SectionTitle title="Open Source" eyebrow="ON GITHUB" />
 
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-8 backdrop-blur lg:p-10">
-          <div className="flex flex-wrap items-start justify-between gap-6">
+        <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 backdrop-blur sm:p-8 lg:p-10">
+          <div className="flex flex-col gap-6 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between">
             <div className="flex items-start gap-4">
-              <div className="flex h-14 w-14 items-center justify-center rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-400">
-                <SiGithub size={26} />
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-400 sm:h-14 sm:w-14">
+                <SiGithub size={22} className="sm:hidden" />
+                <SiGithub size={26} className="hidden sm:block" />
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-slate-100">
+                <h3 className="text-xl font-bold text-slate-100 sm:text-2xl">
                   fethiya37
                 </h3>
                 <p className="mt-1 text-sm text-slate-400">
@@ -45,19 +46,23 @@ export default function GitHub() {
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-6 text-sm text-slate-400">
+            <div className="flex gap-6 text-sm text-slate-400">
               <div>
-                <p className="text-2xl font-bold text-amber-400">85</p>
-                <p className="mt-1">Contributions</p>
+                <p className="text-xl font-bold text-amber-400 sm:text-2xl">
+                  85
+                </p>
+                <p className="mt-1 text-xs sm:text-sm">Contributions</p>
               </div>
               <div>
-                <p className="text-2xl font-bold text-amber-400">6+</p>
-                <p className="mt-1">Public Repos</p>
+                <p className="text-xl font-bold text-amber-400 sm:text-2xl">
+                  6+
+                </p>
+                <p className="mt-1 text-xs sm:text-sm">Public Repos</p>
               </div>
             </div>
           </div>
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid gap-3 sm:mt-10 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
             {repos.map((repo) => (
               <a
                 key={repo.name}
@@ -66,7 +71,7 @@ export default function GitHub() {
                 rel="noreferrer"
                 className="
                   group rounded-xl border border-slate-800 bg-slate-950/40
-                  p-5 transition-all duration-300
+                  p-4 sm:p-5 transition-all duration-300
                   hover:-translate-y-1 hover:border-amber-500/60
                 "
               >
@@ -100,7 +105,7 @@ export default function GitHub() {
               href="https://github.com/fethiya37"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-900/60 px-7 py-3.5 text-sm font-semibold text-slate-200 transition hover:border-amber-500 hover:text-amber-400"
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-900/60 px-6 py-3 text-sm font-semibold text-slate-200 transition hover:border-amber-500 hover:text-amber-400 sm:px-7 sm:py-3.5"
             >
               Visit Full Profile
               <ArrowUpRight size={16} />
