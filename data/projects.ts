@@ -70,7 +70,11 @@ export const projects: Project[] = [
       "Multi-warehouse stock and transfer management",
       "Role-based access for admins, storekeepers, and finance",
     ],
-    images: ["/images/projects/erp-1.png"],
+    images: [
+      "/images/projects/erp-3.png",
+      "/images/projects/erp-2.png",
+      "/images/projects/erp-1.png",
+    ],
   },
 
   {

@@ -10,6 +10,7 @@ import Projects from "@/components/sections/Projects";
 import Contact from "@/components/sections/Contact";
 import GitHub from "@/components/sections/GitHub";
 import CTA from "@/components/sections/CTA";
+import Certificates from "@/components/sections/Certificates";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
   <Skills />
   <Experience />
   <Projects />
+  <Certificates />
   <GitHub />
   <CTA />
   <Contact />
